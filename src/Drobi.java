@@ -24,7 +24,7 @@ public class Drobi {
         return result;
     }
 
-    public static Drobi Sum(Drobi first, Drobi second) {
+    public static Drobi Sum(Drobi first, Drobi second) { // test comment
         var newZnamenatel = Mathh.nok(first.Znamenatel, second.Znamenatel);// создание нового экземпляра класса// функция НОК
         var newChislitel = first.Chislitel * (newZnamenatel / first.Znamenatel) + second.Chislitel * (newZnamenatel / second.Znamenatel);
         Drobi r = new Drobi(newChislitel, newZnamenatel);
